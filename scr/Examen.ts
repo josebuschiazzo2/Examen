@@ -1,18 +1,18 @@
 import { Pregunta } from "./Pregunta";
-
+import { ExamenEspecial } from "./ExamenEspecial"
 export class Examen extends Pregunta {
     private preguntas: Pregunta[];
     private tema: string;
     private puntajeAprobacion: number;
 
-    constructor(pconsigna:string, popciones:string[], popcionCorrecta:number, ppuntaje:number, tema: string, puntaje: number) {
+    constructor(pconsigna: string, popciones: string[], popcionCorrecta: number, ppuntaje: number, tema: string, puntaje: number) {
         super(pconsigna, popciones, popcionCorrecta, ppuntaje);
-    
-        this.tema=tema;
-        this.puntajeAprobacion=puntaje;
+
+        this.tema = tema;
+        this.puntajeAprobacion = puntaje;
     }
 
-    public addPregunta (ppregunta:Pregunta):void {
+    public addPregunta(ppregunta: Pregunta): void {
         this.preguntas.push(ppregunta);
     }
 
@@ -26,7 +26,7 @@ export class Examen extends Pregunta {
         return correcto; 
     }*/
 
-    public getTema():string{
+    public getTema(): string {
         return this.tema;
     }
 }
