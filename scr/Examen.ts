@@ -1,5 +1,5 @@
-import { Pregunta } from "./Pregunta";
-import { ExamenEspecial } from "./ExamenEspecial"
+import { Pregunta } from './Pregunta';
+
 export class Examen extends Pregunta {
     private preguntas: Pregunta[];
     private tema: string;
@@ -16,15 +16,15 @@ export class Examen extends Pregunta {
         this.preguntas.push(ppregunta);
     }
 
-    /*public equals(o:object):boolean{ 
+    public equals(o:object):boolean{ 
         
         let correcto:boolean=false;
         
-       //if (this.opcionCorrecta===prespuesta){
+       if (   ){
              correcto=true;
-        //}
+    }
         return correcto; 
-    }*/
+    }
 
     public getTema(): string {
         return this.tema;
